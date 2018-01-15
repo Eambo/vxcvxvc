@@ -1,0 +1,368 @@
+#breadcrumbs .site-name a,.apollo-header .breadcrumb li a,.apollo-header .controls a{
+    color:#a3a3a3
+}
+.apollo-header .breadcrumb li:last-child,.apollo-header .controls a.active,.controls .sorting{
+    color:#cfcfcf
+}
+.apollo-header h2,.apollo-header h2 a{
+    color:#e3e0dd
+}
+.discussion.box.main.glow{
+    background-color:#0e161db8
+}
+#red-tracker .redtracker-list-item .row .title-box a.title-link:visited,.discussion-list-item .title .title-link:visited .title-span{
+    color:#767676
+}
+body .byline{
+    color:#647f86!important
+}
+body.apollo .content .discussion-list.sticky{
+    background-color:rgba(23,47,70,.9)
+}
+#discussion-list .total-votes{
+    font-size:13px
+}
+#discussion-list .down-vote,#discussion-list .up-vote{
+    display:none!important
+}
+#red-tracker,body.apollo .content .discussion-list.box.main{
+    background-color:#121d27
+}
+#discussion #content,#red-tracker .redtracker-list-item .body .content,.comments-header-container header .discuss,body .markdown-content{
+    color:#afb0ac
+}
+#red-tracker .redtracker-list-item .row .title-box a.title-link,.discussion-list-item .title .title-span,.discussion-title h1.title{
+    color:#b7b9b1
+}
+body .backdrop .magic{
+    background-image:url(https://lolstatic-a.akamaihd.net/apollo/assets/boards_magic.jpg)
+}
+.locked{
+    background-image:url(https://boards.oce.leagueoflegends.com/images/sprite-master-f092f118123c35787b367f855ea0125b.png);
+    background-position:-204px -142px;
+    width:24px;
+    height:34px;
+    margin:0 auto
+}
+#board-info,#navigation-container,#red-tracker,#search-form,.discussion.box.main.glow,.new-discussion-box.box,body.apollo .content .discussion-list.box.main,body.apollo .content .discussion-list.sticky{
+    border:1px solid #063f4c
+}
+#discussion #content div.body,.nested-comment .body-container .body span.high-quality{
+    max-width:700px
+}
+.nested-comment .body-container .body blockquote{
+    border:1px solid #607588;
+    border-left:4px solid #607588
+}
+.nested-comment .body-container .body blockquote .markdown-meta-quoted{
+    color:#465f65
+}
+#red-tracker .redtracker-list-item .body,#red-tracker .redtracker-list-item .row,.discussion-list-item td{
+    border-bottom:1px solid #263d53
+}
+.riot_apollo[data-poll-widget=show] h1{
+    font-family:"Beaufort for LoL",serif;
+    color:#cccdc8;
+    font-size:25px;
+    font-weight:500;
+    padding-bottom:10px
+}
+.nested-comment,.nested-comment .list .nested-comment .list .nested-comment,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment{
+    background-color:#10181f
+}
+.nested-comment .list .nested-comment,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment{
+    background-color:#1c2935
+}
+.nested-comment.isMinimized a.toggle-minimized{
+    background-image:url(https://news-a.akamaihd.net/public/images/oce/Community/Boards/expand.png);
+    background-position:0 -22px;
+    height:22px;
+    width:22px
+}
+.nested-comment a.toggle-minimized{
+    height:22px;
+    width:22px;
+    right:inherit;
+    background-position:0 0;
+    background-image:url(https://news-a.akamaihd.net/public/images/oce/Community/Boards/expand.png);
+    top:-10px;
+    left:-10px;
+    z-index:1
+}
+.nested-comment{
+    border:none;
+    padding:15px 5px 15px 15px
+}
+#discussion .op-container #content,.nested-comment .body-container .body{
+    color:#aeb6b7
+}
+.body-container a.profile-hover,.nested-comment.isOP>.body-container>.header>.inline-profile a{
+    color:#ced0d4;
+    font-weight:550
+    font-size: 18px;
+}
+#comments a.profile-hover .username,.list .realm{
+    font-family:'Beaufort for LOL',serif;
+    font-variant:small-caps;
+    padding:2px 4px;
+    letter-spacing:1px;
+    margin-left:5px
+}
+.nested-comment .body-container .header .inline-profile img{
+    border-radius:50%;
+      height:31px;
+    width:31px
+}
+#board-sidebar-image,.edit.form-container .textarea-holder,.reply.form-container .textarea-holder{
+    border:1px solid #063f4c
+}
+.nested-comment.isOP>.body-container>.header>.inline-profile .username{
+    background-color:rgba(218,218,218,.12)
+}
+#discussion .masthead{
+    border-bottom:1px solid #063f4c
+}
+#discussion #social-bar{
+    border-top:1px solid #063f4c
+}
+#board-sidebar-image img{
+    height:124px;
+    opacity:.8;
+    transition:opacity .2s ease-out;
+    -moz-transition:opacity .2s ease-out;
+    -webkit-transition:opacity .2s ease-out;
+    -o-transition:opacity .2s ease-out
+}
+#board-sidebar-image img:hover{
+    opacity:1
+}
+#board-sidebar-image{
+    background:#000
+}
+.button,.riot-athena-body .btn.riot-athena-submit,body a.button{
+    background-color:#4b5556a1;
+    outline:#949fa0 solid 1px;
+    color:#dce2e2;
+    font-family:"Beaufort for LoL",serif;
+    font-weight:600;
+    text-transform:uppercase;
+    font-size:16px
+}
+.button:hover,.riot-athena .btn:hover,body a.button:hover{
+    outline:#b0b0b0 solid 1px
+}
+.nested-comment .body-container .body .sticker,.toolbar_dropdown .frame .sticker{
+    width:100px;
+    height:100px;
+    background-size:cover
+}
+.cant-comment-warning a,.cant-comment-warning a:visited{
+    color:#c8c8c8
+}
+::-webkit-input-placeholder{
+    color:#b3b3b3!important;
+    font-family:"Beaufort for LoL",serif!important
+}
+::-moz-placeholder{
+    color:#b3b3b3!important;
+    font-family:"Beaufort for LoL",serif!important
+}
+:-ms-input-placeholder{
+    color:#b3b3b3!important;
+    font-family:"Beaufort for LoL",serif!important
+}
+:-moz-placeholder{
+    color:#b3b3b3!important;
+    font-family:"Beaufort for LoL",serif!important
+}
+#comments>.paging,.box.secondary h3,.box.show-more{
+    font-family:"Beaufort for LoL",serif
+}
+.box.secondary h3{
+    color:#cccdc8;
+    text-transform:uppercase;
+    font-size:14px
+}
+#red-tracker .redtracker-list-item .body .content blockquote.vb-quote,.box.secondary.empty-comments,.edit.form-container .bottom-bar,.edit.form-container.main .textarea-holder,.flat .edit.form-container .bottom-bar,.flat .reply.form-container .bottom-bar,.nested-comment .list .nested-comment .edit .textarea-holder,.nested-comment .list .nested-comment .list .nested-comment .edit .bottom-bar,.nested-comment .list .nested-comment .list .nested-comment .edit .preview.box,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .textarea-holder,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .bottom-bar,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .preview.box,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .textarea-holder,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .bottom-bar,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .preview.box,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .textarea-holder,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .bottom-bar,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .preview.box,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .textarea-holder,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .bottom-bar,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .preview.box,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .textarea-holder,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .bottom-bar,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .preview.box,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .textarea-holder,.reply.form-container .bottom-bar,.reply.form-container .preview.box,.reply.form-container.main .textarea-holder{
+    background-color:#10181f
+}
+#red-tracker .redtracker-list-item.expanded .body,.edit.form-container .textarea-holder,.edit.form-container.main .bottom-bar,.flat .edit.form-container .textarea-holder,.flat .reply.form-container .textarea-holder,.nested-comment .list .nested-comment .edit .bottom-bar,.nested-comment .list .nested-comment .edit .preview.box,.nested-comment .list .nested-comment .list .nested-comment .edit .textarea-holder,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .bottom-bar,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .preview.box,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .textarea-holder,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .bottom-bar,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .preview.box,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .textarea-holder,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .bottom-bar,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .preview.box,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .textarea-holder,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .bottom-bar,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .preview.box,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .textarea-holder,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .bottom-bar,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .preview.box,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .textarea-holder,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .bottom-bar,.nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .list .nested-comment .edit .preview.box,.reply.form-container .textarea-holder,.reply.form-container.main .bottom-bar,.riot_apollo[data-poll-widget=show] table.riot-athena-result-collection tr.riot-athena-choice.selected,.riot_apollo[data-poll-widget=show] table.riot-athena-result-collection tr.riot-athena-total.selected,input.box,textarea.box{
+    background-color:#1c2935
+}
+body .body .vb-quote .markdown-content{
+    display:inherit!important
+}
+.comments-header-container header .num-comments label,.edit.form-container .preview.box,.reply.form-container .preview.box{
+    color:#465f65
+}
+.edit.form-container textarea,.reply.form-container textarea{
+    color:#a7a7a7
+}
+.edit.form-container .bottom-bar,.reply.form-container .bottom-bar{
+    border:1px solid #063f4c;
+    border-top:none
+}
+#comments .reply.form-container .cant-comment-warning,.cant-comment-warning a{
+    font-family:"Beaufort for LoL",serif;
+    font-weight:500
+}
+#comments>.paging,.box.show-more{
+    border:1px solid #005c70
+}
+.nested-comment.scroll-to-highlighted{
+    border:2px solid #94724D!important
+}
+#submit input.box,#submit textarea.box{
+    border-color:#063f4c
+}
+#discussion .oembed-content-block,.report-widget{
+    background:#16283a
+}
+.op-container .textarea-holder .editor{
+    overflow-y:scroll!important
+}
+#advisor{
+    color:#87CEEB
+}
+#moderator{
+    color:#7fe4af
+}
+#herald{
+    color:#9c4ad9
+}
+#naps{
+    color:#c60
+}
+#emissary{
+    color:#458b00
+}
+#instructor{
+    color:#5079c4
+}
+#wrenchman{
+    color:#c98f1a
+}
+#archivist{
+    color:#dee26f
+}
+#rioter,.body-container .inline-profile.isRioter a.profile-hover{
+    color:#ae250f
+}
+.tags{
+    font-size:12px;
+    color:#fff;
+    border-radius:10px;
+    padding:2px 10px;
+    margin:0 10px 4px;
+    white-space:nowrap
+}
+.cmoderator{
+    background-color:#559473
+}
+.cadvisor{
+    background-color:#5a96af
+}
+.cnaps{
+    background-color:#c60
+}
+.cherald{
+    background-color:#9c4ad9
+}
+.carchivist{
+    background-color:#9ca200
+}
+.cwrenchman{
+    background-color:#c98f1a
+}
+.cemissary{
+    background-color:#458b00
+}
+.crioter{
+    background-color:#801c0c
+}
+.cinstructor{
+    background-color:#5079c4
+}
+.ttriangle{
+    width:0;
+    height:0;
+    border-left:30px solid transparent;
+    position:absolute;
+    top:0;
+    right:0
+}
+.discussion-list-item .riot-commented .atc-fist,.discussion-list-item .riot-commented .dtb-fist,.discussion-list-item .riot-commented .poro-fist{
+    display:inline-block;
+    width:23px!important;
+    height:23px!important;
+    background-size:contain
+}
+.tmoderator{
+    border-top:25px solid #7fe4af
+}
+.therald{
+    border-top:25px solid #9c4ad9
+}
+.tadvisor{
+    border-top:25px solid #87CEEB
+}
+.tnaps{
+    border-top:25px solid #c60
+}
+.twrenchmen{
+    border-top:25px solid #c98f1a
+}
+.tarchivist{
+    border-top:25px solid #dee26f
+}
+.temissary{
+    border-top:25px solid #458b00
+}
+.tinstructor{
+    border-top:25px solid #5079c4
+}
+.nested-comment .header.byline .op-ref-bar{
+    font-size:12px;
+    border:1px solid #607588;
+    border-left:4px solid #607588;
+    padding:2px 12px;
+    margin-left:7px;
+    white-space:nowrap
+}
+.nested-comment .body-container .body .op-ref{
+    white-space:pre-wrap;
+    color:#B09C87;
+    border:1px dashed #0E3F49;
+    padding:15px;
+    font-size:14px
+}
+.discussion-list-item .riot-commented .poro-fist{
+    background-image:url(https://i.imgur.com/GnF5SPP.png)!important
+}
+.discussion-list-item .riot-commented .dtb-fist{
+    background-image:url(https://i.imgur.com/W8yIXYt.png)!important
+}
+.discussion-list-item .riot-commented .atc-fist{
+    background-image:url(https://universe.leagueoflegends.com/images/role_icon_support.png)!important
+}
+@media screen and (max-width:700px){
+    .nested-comment{
+        padding:10px 0 4px 4px
+    }
+    .discussion-list-item{
+        border-bottom:1px solid #344e66
+    }
+    #discussion #social-bar .right,body .rfmtoolbar{
+        display:block!important
+    }
+    .edit.form-container .bottom-bar .rfmtoolbar,.reply.form-container .bottom-bar .rfmtoolbar{
+        overflow-y:scroll
+    }
+    html body .toolbar_dropdown{
+        width:325px;
+        margin-left:-55px
+    }
+    #DropDown-champion,#DropDown-item,#DropDown-slayer,#DropDown-summoner{
+        left:18%!important
+    }
+}
