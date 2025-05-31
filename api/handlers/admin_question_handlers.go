@@ -16,7 +16,15 @@ import (
 	"github.com/google/uuid"
 )
 
-// QuestionsRouterHandler handles routing for /admin/questions based on HTTP method.
+// QuestionsRouterHandler handles all HTTP requests to the /admin/questions endpoint.
+// It routes incoming requests based on the HTTP method:
+//   POST: Calls createQuestionHandler to create a new question.
+//         Expects a models.Question JSON object in the request body (ID will be generated).
+//   GET: Calls listQuestionsHandler to retrieve a list of all questions.
+//   PUT: Calls updateQuestionHandler to update an existing question.
+//        Expects a models.Question JSON object in the request body (must include question ID).
+//   DELETE: Calls deleteQuestionHandler to remove a question.
+//           Expects an 'id' URL query parameter specifying the question ID.
 func QuestionsRouterHandler(w http.ResponseWriter, r *http.Request) {
 	switch r.Method {
 	case http.MethodPost:

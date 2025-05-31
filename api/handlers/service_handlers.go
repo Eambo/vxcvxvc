@@ -16,12 +16,18 @@ import (
 	"github.com/google/uuid"
 )
 
-// CreateServiceRequest defines the expected structure for creating/finding a service.
+// CreateServiceRequest defines the expected structure for creating/finding a service
+// via the POST /services endpoint.
 type CreateServiceRequest struct {
 	Name string `json:"name"`
 }
 
-// ServicesRouterHandler handles routing for /services based on HTTP method.
+// ServicesRouterHandler handles all HTTP requests to the /services endpoint.
+// It routes incoming requests based on the HTTP method:
+//   POST: Calls findOrCreateServiceHandler. Expects a CreateServiceRequest JSON
+//         in the body ({"name": "service_name"}). It finds an existing service
+//         by name or creates a new one if not found.
+//   GET: Calls listServicesHandler to retrieve a list of all services.
 func ServicesRouterHandler(w http.ResponseWriter, r *http.Request) {
 	switch r.Method {
 	case http.MethodPost: // Using POST for find-or-create semantics

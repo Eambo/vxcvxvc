@@ -17,7 +17,12 @@ import (
 	"github.com/google/uuid"
 )
 
-// SectionsRouterHandler handles routing for /admin/sections based on HTTP method.
+// SectionsRouterHandler handles all HTTP requests to the /admin/sections endpoint.
+// It routes incoming requests based on the HTTP method:
+//   POST: Calls createSectionHandler to create a new section.
+//         Expects a models.Section JSON object (Name, Description) in the request body. ID is generated.
+//   GET: Calls listSectionsHandler to retrieve a list of all sections.
+// Future methods like PUT (update) and DELETE can be added here.
 func SectionsRouterHandler(w http.ResponseWriter, r *http.Request) {
 	switch r.Method {
 	case http.MethodPost:
