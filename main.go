@@ -12,6 +12,7 @@ func main() {
 	http.HandleFunc("/admin/questions", handlers.QuestionsRouterHandler)
 	http.HandleFunc("/admin/sections", handlers.SectionsRouterHandler) // Updated to use SectionsRouterHandler
 	http.HandleFunc("/services", handlers.ServicesRouterHandler)       // New route for services
+	http.HandleFunc("/prr", handlers.SubmitPRRHandler)                 // New route for PRR submissions
 
 	// Start the server
 	port := ":8080"
