@@ -11,9 +11,7 @@ import (
 	"github.com/user/prr/models"
 
 	"github.com/elastic/go-elasticsearch/v8/esapi"
-	"strings" // Required for esapi.SearchRequest if using string body
-
-	"github.com/elastic/go-elasticsearch/v8/esapi"
+	// "strings" // Removed as it's not used when Query is a raw string.
 	"github.com/google/uuid"
 )
 
