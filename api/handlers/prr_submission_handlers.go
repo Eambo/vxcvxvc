@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"context"
 	"encoding/json"
+	"fmt"
 	"log"
 	"net/http"
 	"strings"
@@ -347,54 +348,15 @@ func getPRRSubmissionHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	var submission models.PRRSubmission
-	if err := json.NewDecoder(res.Body).Decode(&submission); err != nil {
-		// The structure in Elasticsearch for _source needs to be decoded directly
-		// The response from esapi.GetRequest includes _index, _id, _version etc.
-		// We need to decode the _source field.
-		var esResponse map[string]interface{}
-		// We need to re-decode the original body as it's already been read by the previous attempt
-		// This is tricky. A better approach is to decode into a generic map first, then extract _source.
-		// For simplicity, let's assume the model matches the direct GET response for now or _source is directly decoded.
-		// A more robust way:
-		// var rawResponse map[string]json.RawMessage
-		// if err := json.NewDecoder(res.Body).Decode(&rawResponse); err != nil { ... }
-		// if err := json.Unmarshal(rawResponse["_source"], &submission); err != nil { ... }
-
-		// Re-reading res.Body is not possible directly.
-		// The initial res.Body has been consumed by the json.NewDecoder.
-		// This part of the code needs to be structured to decode the _source field.
-		// Let's reconstruct how to get the _source:
-		// We need to decode the response into a structure that allows access to _source
-		var esFullResponse struct {
-			Source json.RawMessage `json:"_source"`
-		}
-
-		// To re-read, we'd have to have saved the body or use a method that allows re-reading.
-		// The esapi.Response.Body is an io.ReadCloser.
-		// This is a common gotcha. The simplest fix is to decode into a map[string]interface{}
-		// then extract and unmarshal the _source.
-		// However, since the previous json.NewDecoder already failed, we can't reuse res.Body.
-		// This indicates a structural issue in how the previous Decode was called or the assumption about the response.
-
-		// For now, we'll log the error and return a generic server error.
-		// This part needs correction if models.PRRSubmission cannot directly decode the ES GET response.
-		// It's likely because the response is {"_index": "...", "_id": "...", "_version": ..., "_source": {...PPRSubmission...}}
-
-		log.Printf("Error decoding PRR submission '%s' (likely needs _source extraction): %v", submissionID, err)
-		http.Error(w, "Failed to parse submission data", http.StatusInternalServerError)
+	var esSourceResponse struct {
+		Source models.PRRSubmission `json:"_source"`
+	}
+	if err := json.NewDecoder(res.Body).Decode(&esSourceResponse); err != nil {
+		log.Printf("Error decoding _source for PRR submission '%s': %v", submissionID, err)
+		http.Error(w, "Failed to parse submission data from database response", http.StatusInternalServerError)
 		return
 	}
-
-	// If the above Decode worked, it implies models.PRRSubmission can handle the full ES response, which is unusual.
-	// More likely, it should be:
-	// var esResponseData map[string]interface{}
-	// if err := json.NewDecoder(res.Body).Decode(&esResponseData); err != nil { ... }
-	// sourceData, _ := esResponseData["_source"].(map[string]interface{})
-	// sourceBytes, _ := json.Marshal(sourceData)
-	// if err := json.Unmarshal(sourceBytes, &submission); err != nil { ... }
-	// Given the tool limitations, this detailed fix might be too complex.
-	// The provided solution attempts a direct decode. If it fails in testing, this is the area to fix.
+	submission := esSourceResponse.Source
 
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
@@ -521,13 +483,12 @@ func comparePRRSubmissionsHandler(w http.ResponseWriter, r *http.Request) {
 			}
 			return nil, fmt.Errorf("elasticsearch error fetching submission %s: %s", id, res.String())
 		}
-		var sub models.PRRSubmission
-		// This needs to handle the _source field correctly
-		var esResponse struct { Source models.PRRSubmission `json:"_source"` }
-		if err := json.NewDecoder(res.Body).Decode(&esResponse); err != nil {
-			return nil, fmt.Errorf("error decoding submission %s: %w", id, err)
+		// var sub models.PRRSubmission // This line was previously causing "sub declared and not used"
+		var esSourceResponse struct { Source models.PRRSubmission `json:"_source"` }
+		if err := json.NewDecoder(res.Body).Decode(&esSourceResponse); err != nil {
+			return nil, fmt.Errorf("error decoding submission %s _source: %w", id, err)
 		}
-		return &esResponse.Source, nil
+		return &esSourceResponse.Source, nil
 	}
 
 	sub1, err := fetchSubmission(prrID1)
